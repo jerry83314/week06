@@ -31,6 +31,11 @@ const routes = [
     component: () => import('../views/Fronted/Cart.vue')
   },
   {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Dashboard/Login.vue')
+  },
+  {
     path: '/admin',
     component: () => import('../views/Dashboard/Dashboard.vue'),
     children: [
@@ -43,8 +48,8 @@ const routes = [
         component: () => import('../views/Dashboard/Coupons.vue')
       },
       {
-        path: 'order',
-        component: () => import('../views/Dashboard/Order.vue')
+        path: 'orders',
+        component: () => import('../views/Dashboard/Orders.vue')
       },
       {
         path: 'images',
